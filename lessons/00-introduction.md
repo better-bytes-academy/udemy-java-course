@@ -1,7 +1,7 @@
 # Giới thiệu khoá học
 - **Tên khoá học**: Học Java cho Tester
-- Khoá học từ [**Better Bytes Academy - Học Kĩ, Hiểu Bản Chất - Mentor Tận Tình**](https://www.facebook.com/betterbytes.academy)
-- Dành riêng cho học viên trên nền tảng Udemy
+- **Tác giả**: Khoá học từ [**Better Bytes Academy - Học Kĩ, Hiểu Bản Chất - Mentor Tận Tình**](https://www.facebook.com/betterbytes.academy)
+- **Link khoá học**: [Link kèm discount](https://bit.ly/3Xcpeii)
 - **Tinh thần dạy**: Học Kĩ - Hiểu Bản Chất - Mentor Tận Tình
 - **Tinh thần học**: Học Chủ Động - Học Chăm Chỉ
 
