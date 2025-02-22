@@ -26,7 +26,6 @@
 3. **Chạy chương trình Java đầu tiên**
    - Cấu trúc cơ bản của một chương trình Java.
    - Java Output: Sử dụng `System.out.println()`.
-
 ---
 
 ## **Chương 2: Cú pháp cơ bản trong Java**
@@ -43,7 +42,7 @@
 4. **Toán tử**
    - Toán tử số học, so sánh, logic, gán.
    - Toán tử điều kiện (ternary operator).
-
+5. **Java output**
 ---
 
 ## **Chương 3: Làm việc với chuỗi và mảng**
