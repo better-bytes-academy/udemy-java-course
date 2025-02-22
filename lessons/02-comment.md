@@ -7,19 +7,26 @@
 ## Nội dung bài học
 
 ### Mục lục
-**1. 3 loại comment trong Java**
 
-**2. Vai trò của comment trong kiểm thử**
+**1. Giới thiệu chung**
 
-**3. Một số lưu ý**
+**2. 3 loại comment trong Java**
 
-**4. Tổng hợp những điểm cần nhớ**
+**3. Vai trò của comment trong kiểm thử**
 
-**5. Bài tập**
+**4. Một số lưu ý**
+
+**5. Tổng hợp những điểm cần nhớ**
+
+**6. Bài tập**
 
 ---
 
-## 1. 3 loại comment trong Java
+## 1. Giới thiệu chung
+- Comment trong Java: Đoạn code mà trình biên dịch bỏ qua.
+- Mục đích: Giải thích code, hỗ trợ debug (bỏ qua đoạn logic tạm thời), tạo tài liệu tự động.
+
+## 2. 3 loại comment trong Java
 
 ### Single-line Comment
 - Sử dụng `//` để ghi chú trên một dòng.
@@ -62,7 +69,7 @@ public class HelloWorld {
 javadoc -d out/doc .\lesson02\CommentSample.java
 ```
 
-## 2. Vai trò của comment trong kiểm thử
+## 3. Vai trò của comment trong kiểm thử
 ### Giải thích mục đích và điều kiện kiểm thử
 ```java
 @Test
@@ -101,7 +108,7 @@ public void testLoginUI() {
 }
 ```
 
-## 3. Một số lưu ý khi sử dụng comment
+## 4. Một số lưu ý khi sử dụng comment
 🚀 Comment đúng chỗ = Dễ đọc, dễ bảo trì, và giúp kiểm thử hiệu quả hơn! 🚀
 
 ### Chỉ comment khi cần thiết
@@ -120,13 +127,13 @@ public void testLoginUI() {
 
 ### Cập nhật comment khi source code thay đổi
 
-## 4. Tổng hợp những điểm cần nhớ
+## 5. Tổng hợp những điểm cần nhớ
 ![Example Image](../images/02_comment.png)
 
 
-## 5. Bài tập
+## 6. Bài tập
 
-### 5.1. Bài tập trắc nghiệm
+### 6.1. Bài tập trắc nghiệm
 
 1. Comment nào dưới đây là một Documentation Comment?
    - a. `// Đây là một dòng chú thích`
@@ -140,7 +147,7 @@ public void testLoginUI() {
    - c. Khi tạo tài liệu API.
    - d. Khi ghi chú lỗi.
 
-### 5.2. Bài tập thực hành
+### 6.2. Bài tập thực hành
 1. Thêm comment thích hợp vào đoạn source code sau để giải thích chỗ cần thiết
 ```java
 public class EmployeeSalaryCalculator {
