@@ -185,6 +185,8 @@
 4. Hoàn thành các bước hướng dẫn còn lại để thiết lập tài khoản của bạn.
 5. upload ssh key
 
+Xem thêm video hướng dẫn chi tiết tại đây: [Link](https://www.youtube.com/watch?v=MWKOBfB8I2s)
+
 #### Bước 2: Thiết lập Git trên máy tính
 1. Tải và cài đặt Git từ trang web [git-scm.com](https://git-scm.com).
 2. Sau khi cài đặt, mở terminal (hoặc Command Prompt trên Windows).
