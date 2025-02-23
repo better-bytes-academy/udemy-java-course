@@ -1,12 +1,10 @@
 # Java Comment: Giới thiệu và cách sử dụng
 
 ## Tổng quan bài học
-- 3 loại comment trong Java
+- Comment là gì, 3 loại comment
 - Tại sao comment quan trọng trong kiểm thử
 
 ## Nội dung bài học
-
-### Mục lục
 
 **1. Giới thiệu chung**
 
