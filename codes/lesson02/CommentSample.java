@@ -1,20 +1,18 @@
 package lesson02;
-
 /**
- * Sample class for Comment
+ * Sample class for comment explanation purpose
  * */
 public class CommentSample {
     /**
-     * Main method
-     * @param args tham số dòng lệnh
+     * main method for print hello world
+     * @param args input param
      * */
     public static void main(String[] args) {
-        // single line comment here
-        System.out.println("Hello world!"); // short notice
-
+        // In ra hello world
+        System.out.println("Hello world!"); // print here
         /*
-        * Comment dòng 1
-        * Comment dòng 2
+        * comment line 1
+        * comment line 2
         * */
     }
 }
