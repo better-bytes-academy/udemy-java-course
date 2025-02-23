@@ -1,15 +1,13 @@
 # Các kiểu dữ liệu cơ bản trong Java
 
 ## Tổng quan bài học
-- Kiểu dữ liệu xác định loại giá trị biến có thể lưu
-- 2 nhóm chính:
+- Kiểu dữ liệu xác định loại giá trị biến có thể lưu.
+- Có 2 kiểu dữ liệu: Kiểu nguyên thuỷ (primitive) và kiểu không nguyên thủy (non-primitive).
+- Trong bài này, chúng ta sẽ tập trung tìm hiểu về **kiểu nguyên thuỷ**.
 
 ![Example Image](../images/02_data-types.png)
 
 ## Nội dung bài học
-
-### Mục lục
-
 **1. Kiểu dữ liệu nguyên thủy**
 
 **2. Chuyển đổi kiểu dữ liệu**
@@ -42,9 +40,8 @@ boolean isStudent = true;
 **Xảy ra khi cần thay đổi kiểu của biến**
 ![Example Image](../images/02_casting.png)
 
-### Chuyển đổi ngầm định (Implicit Casting - Widening)
-✅ Kiểu nhỏ → lớn, không cần ép kiểu
-
+### Chuyển đổi không tường minh (Implicit Casting - Widening)
+✅ Kiểu nhỏ → lớn, không cần ép kiểu    
 📌 Không bị mất dữ liệu vì kiểu lớn có thể chứa được kiểu nhỏ
 ```java
 int num = 100;
@@ -52,26 +49,12 @@ double bigNum = num; // Chuyển từ int sang double
 System.out.println(bigNum); // Output: 100.0
 ```
 ### Chuyển đổi tường minh (Explicit Casting - Narrowing)
-✅ Kiểu lớn → nhỏ, cần ép kiểu bằng dấu ( )
-
+✅ Kiểu lớn → nhỏ, cần ép kiểu bằng dấu ( )     
 📌 Có thể mất dữ liệu
 ```java
 double pi = 3.14159;
 int intPi = (int) pi; // Chuyển từ double sang int
 System.out.println(intPi); // Output: 3 (mất phần thập phân)
-```
-### Chuyển đổi giữa kiểu nguyên thủy và String
-✅ Chuyển từ số sang String
-```java
-int number = 42;
-String text = String.valueOf(number);
-System.out.println(text); // Output: "42"
-```
-✅ Chuyển từ String sang số
-```java
-String str = "123";
-int num = Integer.parseInt(str);
-System.out.println(num + 10); // Output: 133
 ```
 
 ## 3. Tổng hợp những điểm cần nhớ
