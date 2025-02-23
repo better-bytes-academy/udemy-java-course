@@ -60,7 +60,53 @@ System.out.println(intPi); // Output: 3 (mất phần thập phân)
 ```
 
 ## 3. Những thực hành tốt nhất
-![Example Image](../images/02_data-types-best-practices.png)
+### Chọn kiểu dữ liệu phù hợp để tối ưu bộ nhớ
+- **Dùng `byte`, `short`, `int`, `long`** cho số nguyên: Chọn kiểu dữ liệu nhỏ nhất có thể.  
+- **Dùng `float`, `double`** cho số thực, nhưng `double` có độ chính xác cao hơn.  
+- **Dùng `boolean`** khi chỉ cần giá trị `true` hoặc `false`.  
+- **Dùng `char`** để lưu trữ ký tự Unicode.
+```java
+byte age = 25;       // Thay vì dùng int nếu phạm vi nhỏ
+long population = 7_800_000_000L; // Cần hậu tố 'L' để xác định kiểu long
+float price = 9.99f; // Cần hậu tố 'f' cho float
+```
+
+### Chú ý phạm vi giá trị của kiểu dữ liệu
+- Mỗi kiểu nguyên thủy có **phạm vi giá trị cố định**.
+- Nếu vượt quá phạm vi: **Lỗi biên dịch**.
+- Java không cảnh báo **lỗi tràn số (overflow)** với kiểu nguyên thủy, giá trị sẽ bị **"quay vòng" (wrap around)**.
+```java
+short salary = 40000; // ❌ Lỗi: short chỉ chứa giá trị từ -32,768 đến 32,767
+byte numberOfBoxes = 200;    // ❌ Lỗi: byte chỉ chứa giá trị từ -128 đến 127
+// ✅ Dùng int thay vì short
+int numberOfPeople = 40000; // Dùng int thay vì short
+// ❌ Ví dụ về giá trị bị quay vòng
+byte x = 127; // Giá trị lớn nhất của byte
+x += 1;
+System.out.println(x); // ❌ Output: -128 (do tràn số)
+```
+
+### Cẩn thận khi ép kiểu (Casting)
+- Khi chuyển đổi kiểu dữ liệu **lớn sang nhỏ**, cần **ép kiểu tường minh** để tránh mất dữ liệu.
+- Chuyển đổi từ `double` sang `int` sẽ làm **mất phần thập phân**.
+```java
+double pi = 3.14159;
+int intPi = (int) pi; // Mất phần thập phân
+System.out.println(intPi); // Output: 3
+```
+
+### Giá trị mặc định của kiểu nguyên thủy
+Biến cục bộ (local variable):
+- **Không có** giá trị mặc định.
+- Phải được **khởi tạo trước** khi sử dụng.
+```java
+public class Main {
+    public static void main(String[] args) {
+        int x;  
+        System.out.println(x); // ❌ Lỗi: x chưa được khởi tạo
+    }
+}
+```
 
 ## 4. Tổng hợp những điểm cần nhớ
 ![Example Image](../images/02_data-types-summary.png)
@@ -148,4 +194,8 @@ System.out.println("a = " + a);
 System.out.println("b = " + b);
 ```
 Hãy phân tích kết quả đầu ra của đoạn code trên và giải thích tại sao giá trị của `b` lại như vậy.
+
+**Bài 5:** Viết chương trình yêu cầu người dùng nhập một số nguyên từ bàn phím (kiểu int), sau đó chuyển đổi số đó sang kiểu `float` và `double`, rồi in cả ba giá trị ra màn hình. 
+**Gợi ý 1:** Sử dụng lớp Scanner.
+**Gợi ý 2:** Đảm bảo chương trình xử lý đầu vào hợp lệ và hiển thị rõ ràng từng kiểu dữ liệu.
 
