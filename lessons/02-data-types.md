@@ -12,9 +12,11 @@
 
 **2. Chuyển đổi kiểu dữ liệu**
 
-**3. Tổng hợp những điểm cần nhớ**
+**3. Những thực hành tốt nhất**
 
-**4. Bài tập**
+**4. Tổng hợp những điểm cần nhớ**
+
+**5. Bài tập**
 
 ## 1. Kiểu dữ liệu nguyên thủy
 
@@ -57,14 +59,15 @@ int intPi = (int) pi; // Chuyển từ double sang int
 System.out.println(intPi); // Output: 3 (mất phần thập phân)
 ```
 
-## 3. Tổng hợp những điểm cần nhớ
+## 3. Những thực hành tốt nhất
+![Example Image](../images/02_data-types-best-practices.png)
+
+## 4. Tổng hợp những điểm cần nhớ
 ![Example Image](../images/02_data-types-summary.png)
 
----
+## 5. Bài tập
 
-## 4. Bài tập
-
-### Bài tập trắc nghiệm
+### 10 Câu hỏi trắc nghiệm
 
 **Câu 1:** Kiểu dữ liệu nào trong Java có kích thước **4 byte**?  
 - A. `byte`  
@@ -72,15 +75,11 @@ System.out.println(intPi); // Output: 3 (mất phần thập phân)
 - C. `int`  
 - D. `long`  
 
----
-
 **Câu 2:** Kiểu dữ liệu nào chỉ có thể lưu giá trị `true` hoặc `false`?  
 - A. `int`  
 - B. `char`  
 - C. `boolean`  
 - D. `byte` 
-
----
 
 **Câu 3:** Giá trị nào **hợp lệ** khi gán cho biến kiểu `char`?  
 - A. `'A'`  
@@ -88,21 +87,65 @@ System.out.println(intPi); // Output: 3 (mất phần thập phân)
 - C. `65`  
 - D. `true`  
 
----
-
-### **Câu 4:** Điều gì xảy ra khi ép kiểu `double` sang `int` bằng cách `int x = (int) 3.9;`?  
+**Câu 4:** Điều gì xảy ra khi ép kiểu `double` sang `int` bằng cách `int x = (int) 3.9;`?  
 - A. Lỗi biên dịch  
 - B. Kết quả là `4`  
 - C. Kết quả là `3`  
 - D. Lỗi thời gian chạy
 
+**Câu 5:** Câu lệnh nào sau đây đúng cú pháp khi khai báo biến kiểu `float`?
+- A. `float x = 5.5;`  
+- B. `float x = 5.5f;`  
+- C. `float x = 5;`  
+- D. Cả B và C đều đúng 
+
+**Câu 6:** Chuyển đổi kiểu dữ liệu từ `int` sang `double` được gọi là gì?
+- A. Explicit Casting  
+- B. Narrowing  
+- C. Implicit Casting  
+- D. Type Overflow  
+
+**Câu 7:** Phạm vi giá trị của kiểu `short` là gì?
+- A. -128 đến 127  
+- B. -32,768 đến 32,767  
+- C. -2³¹ đến 2³¹-1  
+- D. 0 đến 65,535  
+
+**Câu 8:** Kiểu dữ liệu `char` trong Java có kích thước bao nhiêu byte?
+- A. 1 byte
+- B. 2 byte
+- C. 4 byte
+- D. 8 byte
+
+**Câu 9:** Câu lệnh nào sau đây sẽ gây **lỗi biên dịch**?
+- A. byte b = 100;
+- B. short s = 40000;
+- C. char c = 'A';
+- D. long l = 50000L;
+
+**Câu 10:** Trong chuyển đổi kiểu dữ liệu, khi nào có thể xảy ra **mất dữ liệu**?
+- A. Khi chuyển từ kiểu nhỏ sang kiểu lớn
+- B. Khi chuyển từ kiểu lớn sang kiểu nhỏ
+- C. Khi chuyển từ int sang long
+- D. Khi chuyển từ boolean sang int
+
 ### Bài tập thực hành
-**Bài 1:** Viết chương trình khai báo và in ra giá trị của tất cả 8 kiểu dữ liệu nguyên thủy trong Java
 
----
+**Bài 1:** Viết một đoạn code Java sử dụng tất cả 8 kiểu dữ liệu nguyên thủy (`byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`). In giá trị của các biến này ra màn hình.
+Gợi ý: Đảm bảo giá trị nằm trong phạm vi cho phép của từng kiểu.
 
-**Bài 2:** Viết chương trình thực hiện ép kiểu tường minh và ép kiểu ngầm định với các kiểu dữ liệu sau:
-- Chuyển `double` sang `int`
-- Chuyển `int` sang `double`
-- Chuyển `char` sang `int`
-- Chuyển `int` sang `char`
+**Bài 2:** Giải thích sự khác biệt giữa Implicit Casting và Explicit Casting. Hãy viết hai đoạn code minh họa: một cho Implicit Casting từ int sang double, và một cho Explicit Casting từ double sang int.
+Gợi ý: Bao gồm kết quả đầu ra và giải thích tại sao có sự thay đổi (nếu có).
+
+**Bài 3:** Mô tả sự khác biệt giữa kiểu dữ liệu `float` và `double` trong Java. Hãy đưa ra ví dụ minh họa cho từng kiểu.
+Gợi ý: Tập trung vào kích thước, phạm vi giá trị, và cách khai báo.
+
+**Bài 4:** Cho đoạn code sau:
+```java
+double a = 123.456;
+int b = (int) a;
+System.out.println("a = " + a);
+System.out.println("b = " + b);
+```
+Hãy phân tích kết quả đầu ra của đoạn code trên và giải thích tại sao giá trị của `b` lại như vậy.
+
