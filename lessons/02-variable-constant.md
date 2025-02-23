@@ -28,13 +28,16 @@
 ```java
 // Ví dụ hợp lệ
 int age = 25;
+double saralyRate = 1.0;
+String fullName;
+
 // Hợp lệ nhưng không khuyến khích
 String first_name = "John"; 
 String $salary = "5000";
 
 // Ví dụ không hợp lệ
 int 2days;    // Không được bắt đầu bằng số
-int first-name; // Không được chứa ký tự "-"
+int first-name = "Anh"; // Không được chứa ký tự "-"
 ```
 
 ### **Bảng Từ Khóa Trong Java**
@@ -53,9 +56,9 @@ int first-name; // Không được chứa ký tự "-"
 | **Từ khóa bị loại bỏ**        | `goto`, `const` (Không sử dụng trong Java)                              |
 
 ## 2. Hằng
-- Hằng là biến có giá trị không thể thay đổi sau khi gán
+- Hằng là biến có giá trị **không thể** thay đổi sau khi gán
 - Biểu diễn các giá trị cố định
-- Giúp source code dễ đọc và bảo trì hơn
+- Giúp source code dễ đọc và bảo trì hơn, tránh các thay đổi không mong muốn.
 
 ### Cách khai báo và sử dụng hằng
 - `final`
@@ -70,22 +73,56 @@ final int MAX_USERS = 100;
 ### Lưu ý khi sử dụng hằng
 - Khai báo hằng với `final`, gán giá trị ngay khi khai báo
 - Đặt tên hằng theo chuẩn UPPER_CASE
-- Không thể gán lại giá trị
+- **Không thể** gán lại giá trị
 
 ## 3. Tổng hợp những điểm cần nhớ
-![Example Image](../images/02_summary.png)
+![Example Image](../images/02_variable_summary.png)
 
 ---
 
 ## 4. Bài tập
 
-### 4.1. Bài tập trắc nghiệm
-1. Tên biến nào dưới đây là không hợp lệ?
-   - a. `age`
-   - b. `2days`
-   - c. `_salary`
-   - d. `$value`
+### Bài tập trắc nghiệm
+**Câu 1:** Trong Java, từ khóa nào được sử dụng để khai báo một hằng số?
+   - A. `static`
+   - B. `final`
+   - C. `const`
+   - D. `volatile`
 
-### 4.2. Bài tập thực hành
-1. Khai báo các biến để lưu trữ thông tin cá nhân (tên, tuổi, chiều cao).
-2. Sử dụng từ khóa `final` để định nghĩa một hằng số đại diện cho số Pi.
+**Câu 2:** Đâu là tên biến hợp lệ trong Java?
+   - A. `2days`
+   - B. `first-name`
+   - C. `age`
+   - D. `first name`
+
+**Câu 3:** Đâu là cách khai báo hằng số đúng trong Java?
+   - A. `final int MAX_USERS = 100;`
+   - B. `int final MAX_USERS = 100;`
+   - C. `final MAX_USERS = 100;`
+   - D. `int MAX_USERS = final 100;`
+
+**Câu 4:** Đâu là tên hằng số tốt trong Java?
+   - A. `maxUsers`
+   - B. `MAX_USERS`
+   - C. `MaxUsers`
+   - D. `max_users`
+
+**Câu 5:** Đâu là cách khai báo biến hợp lệ trong Java?
+   - A. `int 2days;`
+   - B. `int first-name;`
+   - C. `int age = 25;`
+   - D. `String last name = "Nguyen";`
+
+
+### Bài tập thực hành
+**Bài 1:** Giải thích sự khác biệt giữa biến và hằng trong Java. Cho ví dụ minh họa.
+
+**Bài 2:** Viết một chương trình Java đơn giản để khai báo các biến lưu trữ thông tin cá nhân (tên, tuổi, chiều cao).
+
+**Bài 3:** Tại sao việc đặt tên biến và hằng số một cách có ý nghĩa lại quan trọng trong lập trình? Cho ví dụ.
+
+**Bài 4:** Liệt kê và giải thích các quy tắc đặt tên biến trong Java.
+
+**Bài 5:** Viết một đoạn mã Java để khai báo một hằng số `PI` với giá trị 3.14159 và sử dụng nó để tính diện tích của một hình tròn.
+
+**Bài 6:** Giải thích ý nghĩa của từ khóa `final` trong Java. Cho ví dụ minh họa.
