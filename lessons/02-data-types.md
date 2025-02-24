@@ -1,8 +1,8 @@
 # Các kiểu dữ liệu cơ bản trong Java
 
 ## Tổng quan bài học
-- Kiểu dữ liệu xác định loại giá trị biến có thể lưu.
-- Có 2 kiểu dữ liệu: Kiểu nguyên thuỷ (primitive) và kiểu không nguyên thủy (non-primitive).
+- Kiểu dữ liệu xác định **loại giá trị** biến và hằng có thể lưu.
+- Có 2 kiểu dữ liệu: **Kiểu nguyên thuỷ (primitive)** và **kiểu không nguyên thủy (non-primitive)**.
 - Trong bài này, chúng ta sẽ tập trung tìm hiểu về **kiểu nguyên thuỷ**.
 
 ![Example Image](../images/02_data-types.png)
@@ -33,9 +33,10 @@
 
 ```java
 int age = 25;
-float height = 5.8f;
 char gender = 'M';
 boolean isStudent = true;
+float pi = 3.14f;
+double precisePi = 3.141592653589793;
 ```
 
 ## 2. Chuyển đổi kiểu dữ liệu
