@@ -20,6 +20,25 @@
 - Có nhiều cách nhập dữ liệu: Scanner (keyboard), BufferedReader (keyboard), Console (CLI), FileReader (File) ...
 - Scanner là cách đơn giản nhất
 - Thuộc package `java.util`, hỗ trợ nhập số, chuỗi, boolean ...
+
+### Các phương thức phổ biến của `Scanner`
+- `next()`: Đọc 1 từ
+- `nextLine()`: Đọc cả dòng
+- `nextXxx()`: Đọc các số có kiểu nguyên thủy hoặc boolean
+
+
+| **Phương thức** | **Kiểu dữ liệu đọc vào** | **Mô tả** | **Ví dụ** |
+|---------------|------------------|-----------|-----------|
+| `nextInt()` | `int` | Đọc một số nguyên | `int age = scanner.nextInt();` |
+| `nextDouble()` | `double` | Đọc một số thực (dấu chấm động) | `double price = scanner.nextDouble();` |
+| `nextBoolean()` | `boolean` | Đọc giá trị `true` hoặc `false` | `boolean isJavaFun = scanner.nextBoolean();` |
+| `next()` | `String` | Đọc một từ (chuỗi không chứa khoảng trắng) | `String name = scanner.next();` |
+| `nextLine()` | `String` | Đọc cả dòng (bao gồm khoảng trắng) | `String fullName = scanner.nextLine();` |
+| `nextByte()` | `byte` | Đọc số kiểu `byte` | `byte smallNumber = scanner.nextByte();` |
+| `nextShort()` | `short` | Đọc số kiểu `short` | `short shortNumber = scanner.nextShort();` |
+| `nextLong()` | `long` | Đọc số kiểu `long` | `long bigNumber = scanner.nextLong();` |
+| `nextFloat()` | `float` | Đọc số kiểu `float` | `float pi = scanner.nextFloat();` |
+
 ```java
 import java.util.Scanner;
 
@@ -42,29 +61,12 @@ public class ScannerExample {
     }
 }
 ```
+
 ### Lưu ý
 - Luôn đóng `scanner.close();` sau khi sử dụng.
 - Dùng `scanner.nextLine()` cẩn thận sau `nextInt()` hoặc `nextDouble()` 
   - Nguyên nhân: Nguyên nhân `nextInt()` và `nextDouble()` chỉ đọc giá trị số và không đọc ký tự xuống dòng (\n) sau khi nhấn Enter.
   - Cách khắc phục: Thêm `scanner.nextLine();` sau khi nhập số.
-
-### Các phương thức phổ biến của `Scanner`
-- `next()`: Đọc 1 từ
-- `nextLine()`: Đọc cả dòng
-- `nextXxx()`: Đọc các số kiểu nguyên thủy hoặc boolean
-
-| **Phương thức** | **Kiểu dữ liệu đọc vào** | **Mô tả** | **Ví dụ** |
-|---------------|------------------|-----------|-----------|
-| `nextInt()` | `int` | Đọc một số nguyên | `int age = scanner.nextInt();` |
-| `nextDouble()` | `double` | Đọc một số thực (dấu chấm động) | `double price = scanner.nextDouble();` |
-| `nextBoolean()` | `boolean` | Đọc giá trị `true` hoặc `false` | `boolean isJavaFun = scanner.nextBoolean();` |
-| `next()` | `String` | Đọc một từ (chuỗi không chứa khoảng trắng) | `String name = scanner.next();` |
-| `nextLine()` | `String` | Đọc cả dòng (bao gồm khoảng trắng) | `String fullName = scanner.nextLine();` |
-| `nextByte()` | `byte` | Đọc số kiểu `byte` | `byte smallNumber = scanner.nextByte();` |
-| `nextShort()` | `short` | Đọc số kiểu `short` | `short shortNumber = scanner.nextShort();` |
-| `nextLong()` | `long` | Đọc số kiểu `long` | `long bigNumber = scanner.nextLong();` |
-| `nextFloat()` | `float` | Đọc số kiểu `float` | `float pi = scanner.nextFloat();` |
-
 
 ## 2. Xuất dữ liệu với System.out/err
 - `System.out` `System.err`: Đối tượng tĩnh của class PrintStream: In ra console.
