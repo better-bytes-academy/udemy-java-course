@@ -49,6 +49,9 @@ public class ScannerExample {
   - Cách khắc phục: Thêm `scanner.nextLine();` sau khi nhập số.
 
 ### Các phương thức phổ biến của `Scanner`
+- `next()`: Đọc 1 từ
+- `nextLine()`: Đọc cả dòng
+- `nextXxx()`: Đọc các số kiểu nguyên thủy hoặc boolean
 
 | **Phương thức** | **Kiểu dữ liệu đọc vào** | **Mô tả** | **Ví dụ** |
 |---------------|------------------|-----------|-----------|
