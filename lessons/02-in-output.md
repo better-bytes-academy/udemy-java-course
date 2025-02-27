@@ -8,7 +8,6 @@
 
 ## Nội dung bài học
 
-### Mục lục
 **1. Nhập dữ liệu với Scanner**
 
 **2. Xuất dữ liệu với System.out/err**
@@ -45,7 +44,8 @@ public class ScannerExample {
 ```
 ### Lưu ý
 - Luôn đóng `scanner.close();` sau khi sử dụng.
-- Dùng `scanner.nextLine()` cẩn thận sau `nextInt()` hoặc `nextDouble()` vì bộ đệm `\n` có thể làm mất dòng nhập.
+- Dùng `scanner.nextLine()` cẩn thận sau `nextInt()` hoặc `nextDouble()` 
+  - Nguyên nhân: Nguyên nhân `nextInt()` và `nextDouble()` chỉ đọc giá trị số và không đọc ký tự xuống dòng (\n) sau khi nhấn Enter.
   - Cách khắc phục: Thêm `scanner.nextLine();` sau khi nhập số.
 
 ### Các phương thức phổ biến của `Scanner`
