@@ -26,19 +26,6 @@
 - `nextLine()`: Đọc cả dòng
 - `nextXxx()`: Đọc các số có kiểu nguyên thủy hoặc boolean
 
-
-| **Phương thức** | **Kiểu dữ liệu đọc vào** | **Mô tả** | **Ví dụ** |
-|---------------|------------------|-----------|-----------|
-| `nextInt()` | `int` | Đọc một số nguyên | `int age = scanner.nextInt();` |
-| `nextDouble()` | `double` | Đọc một số thực (dấu chấm động) | `double price = scanner.nextDouble();` |
-| `nextBoolean()` | `boolean` | Đọc giá trị `true` hoặc `false` | `boolean isJavaFun = scanner.nextBoolean();` |
-| `next()` | `String` | Đọc một từ (chuỗi không chứa khoảng trắng) | `String name = scanner.next();` |
-| `nextLine()` | `String` | Đọc cả dòng (bao gồm khoảng trắng) | `String fullName = scanner.nextLine();` |
-| `nextByte()` | `byte` | Đọc số kiểu `byte` | `byte smallNumber = scanner.nextByte();` |
-| `nextShort()` | `short` | Đọc số kiểu `short` | `short shortNumber = scanner.nextShort();` |
-| `nextLong()` | `long` | Đọc số kiểu `long` | `long bigNumber = scanner.nextLong();` |
-| `nextFloat()` | `float` | Đọc số kiểu `float` | `float pi = scanner.nextFloat();` |
-
 ```java
 import java.util.Scanner;
 
@@ -61,6 +48,18 @@ public class ScannerExample {
     }
 }
 ```
+
+| **Phương thức** | **Kiểu dữ liệu đọc vào** | **Mô tả** | **Ví dụ** |
+|---------------|------------------|-----------|-----------|
+| `nextInt()` | `int` | Đọc một số nguyên | `int age = scanner.nextInt();` |
+| `nextDouble()` | `double` | Đọc một số thực (dấu chấm động) | `double price = scanner.nextDouble();` |
+| `nextBoolean()` | `boolean` | Đọc giá trị `true` hoặc `false` | `boolean isJavaFun = scanner.nextBoolean();` |
+| `next()` | `String` | Đọc một từ (chuỗi không chứa khoảng trắng) | `String name = scanner.next();` |
+| `nextLine()` | `String` | Đọc cả dòng (bao gồm khoảng trắng) | `String fullName = scanner.nextLine();` |
+| `nextByte()` | `byte` | Đọc số kiểu `byte` | `byte smallNumber = scanner.nextByte();` |
+| `nextShort()` | `short` | Đọc số kiểu `short` | `short shortNumber = scanner.nextShort();` |
+| `nextLong()` | `long` | Đọc số kiểu `long` | `long bigNumber = scanner.nextLong();` |
+| `nextFloat()` | `float` | Đọc số kiểu `float` | `float pi = scanner.nextFloat();` |
 
 ### Lưu ý
 - Luôn đóng `scanner.close();` sau khi sử dụng.
