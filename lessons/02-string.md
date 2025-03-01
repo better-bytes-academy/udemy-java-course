@@ -128,7 +128,7 @@ System.out.println(unicode); // Output: こんにちは
 
 
 ## 3. Tổng hợp những điểm cần nhớ
-![Example Image](../images/02_04-5-summary.png)
+![Example Image](../images/02_string_summary.png)
 
 ## 4. Bài tập
 
